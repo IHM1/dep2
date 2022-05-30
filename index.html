@@ -98,7 +98,7 @@
                         <td colspan="2"><strong>Kjent kunnskap om bunntetting</strong><br />' + (feature.properties['Bunntettin'] !== null ? autolinker.link(feature.properties['Bunntettin'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>Info</strong><br />' + (feature.properties['Bilde'] !== null ? '<a href="images/' + String(feature.properties['Bilde']).replace(/[\\\/:]/g, '_').trim() + '">Plantegning\bilde' : '') + '</a></td>\
+                        <td colspan="2"><strong>Info</strong><br />' + (feature.properties['Bilde'] !== null ? '<a href="images/' + String(feature.properties['Bilde']).replace(/[\\\/:]/g, '_').trim() + '">Plantegning/Bilde' : '') + '</a></td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
